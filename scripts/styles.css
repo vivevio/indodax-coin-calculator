@@ -1,0 +1,357 @@
+:root {
+  --green: #18a681;
+  --black: #393838;
+  --blue: #0E5DF6;
+  --light_blue: #F6FAFF;
+  --gray: #BABFC9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.d-none {
+    display: none !important;
+}
+
+body {
+  width: 317px;
+  height: 480px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  color: var(--black);
+  background-color: var(--light_blue);
+}
+body.error {
+  height: 270px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  width: 100vw;
+  padding: 20px;
+}
+header .greeting {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+header .greeting .greeting-intro {
+  color: var(--gray);
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.05em;
+}
+header .greeting .greeting-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.05em;
+}
+header .logo {
+  height: 32px;
+}
+header .logo img {
+  width: 32px;
+}
+header .coin-logo {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.05em;
+  color: var(--blue);
+  display: block;
+  background: #D1E9FF;
+  border-radius: 8px;
+  padding: 3px 4px;
+  margin-right: 5px;
+}
+
+.line {
+  width: 32px;
+  height: 7px;
+  background: var(--green);
+  border-radius: 5px;
+}
+
+.line.small {
+    width: 15px;
+    height: 5px;
+    margin-bottom: 10px;
+}
+
+.content {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.card {
+    margin-bottom: 40px;
+}
+
+.card.hero-card {
+  width: 284px;
+  height: 147px;
+  background: linear-gradient(142.74deg, #0E5DF7 9.36%, #0052B1 132.2%);
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  padding: 24px;
+  margin-bottom: 30px;
+}
+.card.hero-card::before {
+  content: '';
+  background: url('../assets/circle-top.png') no-repeat;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+.card.hero-card::after {
+  content: '';
+  background: url('../assets/circle-bottom.png') no-repeat;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.card.hero-card .card-item {
+  margin-bottom: 10px;
+}
+.card.hero-card .card-item .card-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #BAD3FF;
+}
+.card.hero-card .card-item .card-value {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+}
+.card.hero-card .card-item.size-sm .card-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+}
+.card.hero-card .card-item.size-sm .card-value {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+}
+.section-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.05em;
+  margin: 0 26px;
+  margin-bottom: 12px;
+}
+.card.grid-card {
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.card.grid-card .card-item {
+  background-color: #fff;
+  box-shadow: 0px 3px 5px #E5EFFC;
+  border-radius: 13px;
+  width: 144px;
+  height: 124px;
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+}
+.card.grid-card .card-item .card-title {
+  letter-spacing: -0.05em;
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: -5px;
+}
+.card.grid-card .card-item .card-value span {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.05em;
+  color: var(--blue);
+  display: inline-block;
+  padding-left: 3px;
+}
+.card.grid-card .card-item .card-value {
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: -0.05em;
+}
+.card.list-card {
+  margin: 0 11px;  
+}
+.card.list-card .card-item {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  padding: 12px 17px;
+  justify-content: space-between;
+  align-items: center;
+}
+.card.list-card .card-title {
+  color: var(--gray);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+.card.list-card .card-value {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.05em;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.page-error {
+    margin: 40px 20px 15px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.page-error h2 {
+    font-size: 14px;
+    color: #F60E46;
+    margin: 0;
+    font-weight: 600;
+}
+
+.page-error p {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.page-error button {
+    width: 125px;
+    height: 37px;
+    color: #fff;
+    border: none;
+    background-color: var(--blue);
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.page-error button:hover {
+    background-color: #0F43A9;
+}
+
+footer {
+    color: var(--gray);
+    font-size: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+footer a {
+  color: var(--blue);
+}
+
+#pre-loader {
+    height: 205px;
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pre-loader span {
+    font-size: 12px;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 50px;
+  margin-bottom: 13px;
+margin-top: -40px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--blue);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}

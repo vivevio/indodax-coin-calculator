@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/scripts/styles.css">
+</head>
+<body>
+    <header>
+        <div class="greeting">
+            <span class="greeting-intro">Welcome</span>
+            <span class="greeting-name">-</span>
+        </div>
+        <div class="coin-logo">
+            -
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="section" id="pre-loader">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            <span>Menghitung kekayaan anda...</span>
+        </div>
+        <div class="section account-result d-none">
+            <div class="card hero-card">
+                <div class="card-item">
+                    <div class="card-title">Est. asset <span id="coin-code">-</span></div>
+                    <div class="card-value" id="est-coin-asset">Rp 0</div>
+                </div>
+                <div class="card-item size-sm">
+                    <div class="card-title">Lifetime profit</div>
+                    <div class="card-value" id="life-time-profit">Rp 0</div>
+                </div>
+            </div>
+            <div class="section-title">Trading Trivia</div>
+            <div class="card grid-card row">
+                <div class="card-item">
+                    <div class="card-value" id="tp">0<span>x</span></div>
+                    <div class="card-title">Take Profit</div>
+                </div>
+                <div class="card-item">
+                    <div class="card-value" id="cl">0<span>x</span></div>
+                    <div class="card-title">Cut Loss</div>
+                </div>
+            </div>
+            <div class="section-title">Trading Summary</div>
+
+            <div class="card list-card column">
+                <div class="card-item row">
+                    <div>
+                        <div class="card-title">Total Beli</div>
+                        <div class="card-value" id="total-buy">Rp 0</div>
+                    </div>
+                    <div>
+                        <img src="/assets/bag-icon.svg" alt="">
+                    </div>
+                </div>
+                <div class="card-item row">
+                    <div>
+                        <div class="card-title">Total Jual</div>
+                        <div class="card-value" id="total-sell">Rp 0</div>
+                    </div>
+                    <div>
+                        <img src="/assets/wallet-icon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section page-error d-none">
+            <h2>Someting went Wrong!</h2>
+            <p>You must on the Indodax trading market page to see your coin assets statistic</p>
+            <button id="goto-market">Go to Indodax</button>
+        </div>
+    </div>
+
+    <footer>
+        created by <a href="https://vivevio.co">vive vio</a>
+    </footer>
+    
+    <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/popup.js"></script>
+</body>
+</html>
