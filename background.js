@@ -72,7 +72,10 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
                 var target = document.querySelector('body');
                 if( target.classList.value.indexOf('pace-done') ) {
                     sendResponse({type:'loaded'});
+                } else {
+                    sendResponse({type:'pace-running'});
                 }
+
             }
         }
     }
