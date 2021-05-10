@@ -1,5 +1,5 @@
 # Indodax Coin Calculator
-This extension actually help me to know wheter I get profit or loss in the Indodax market in the specific Cryptocurrencty.
+This extension actually help me to know wheter I get profit or loss in the Indodax market in the specific Cryptocurrency.
 
 <img src="https://raw.githubusercontent.com/vivevio/indodax-coin-calculator/master/preview.png" width="200">
 
